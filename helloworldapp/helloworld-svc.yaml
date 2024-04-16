@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: helloworld
 spec:
+  type: LoadBalancer
+    ports:
+    - port: 9090
   selector:
     app: helloworld
-  ports:
-    - protocol: TCP
-      port: 90
-      targetPort: 8000
-  type: LoadBalancer
+
+
