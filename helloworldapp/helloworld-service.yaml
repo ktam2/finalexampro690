@@ -4,9 +4,9 @@ metadata:
   name: helloworld
 spec:
   type: LoadBalancer
-    ports:
-    - port: 9090
-      targetPort: 9090
+  ports:
+  - port: 9090
+    targetPort: 9090
   selector:
     app: helloworld
 
