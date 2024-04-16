@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kt-helloworld
+  name: helloworld
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: kt-helloworld
+      app: helloworld
   template:
     metadata:
       labels:
-        app: kt-helloworld
+        app: helloworld
     spec:
       containers:
-        - name: kt-helloworld
+        - name: helloworld
           image: gcr.io/google-samples/hello-app:1.0
           ports:
             - containerPort: 8000
