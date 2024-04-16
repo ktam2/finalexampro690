@@ -22,7 +22,7 @@ spec:
   template:
     metadata:
       labels:
-        app: rollouts-demohelloworldrollout
+        app: helloworldrollout
     spec:
       containers:
       - name: helloworldrollout
